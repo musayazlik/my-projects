@@ -2,7 +2,14 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx}'],
   theme: {
-    extend: {}
+    extend: {
+      screens: {
+        sm: '576px'
+      }
+    },
+    container: {
+      center: true
+    }
   },
   plugins: []
 }

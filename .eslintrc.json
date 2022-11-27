@@ -3,7 +3,15 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["plugin:react/recommended", "plugin:@next/next/recommended", "prettier", "eslint-config-prettier", "next", "plugin:@typescript-eslint/recommended", "next/core-web-vitals"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@next/next/recommended",
+    "prettier",
+    "eslint-config-prettier",
+    "next",
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -12,7 +20,12 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier", "eslint-plugin-prettier", "@typescript-eslint"],
+  "plugins": [
+    "react",
+    "prettier",
+    "eslint-plugin-prettier",
+    "@typescript-eslint"
+  ],
   "rules": {
     //"react/react-in-jsx-scope": "off",
     //"react/prop-types": "off",
@@ -20,9 +33,11 @@
     "prettier/prettier": [
       "error",
       {
+        "usePrettierrc": false,
+        "bracketSameLine": true,
         "endOfLine": "auto",
         "printWidth": 80,
-        "trailingComma": "all",
+        "trailingComma": "es5",
         "bracketSpacing": true,
         "arrowParens": "always",
         "semi": false,
